@@ -2,6 +2,7 @@
 
 let username = prompt('Welcome! What is your name?');
 alert(`Hello ${username}! Welcome to my About Me page.`);
+alert('We are going to play a guessing game. Please answer \'yes\' or \'no\'.(y/n)');
 
 let answerOne = prompt('Do I have a family?').toLowerCase();
 if(answerOne === 'yes' || answerOne === 'y'){
