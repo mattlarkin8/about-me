@@ -1,1 +1,5 @@
-# about-me-201d86
+# Project Name: About Me
+
+## Author: Matthew Larkin
+
+## Lab 02

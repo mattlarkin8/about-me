@@ -1,5 +1,8 @@
 'use strict';
 
+let username = prompt('Welcome! What is your name?');
+alert(`Hello ${username}`);
+
 let answerOne = prompt('Do I have a family?').toLowerCase();
 if(answerOne === 'yes' || answerOne === 'y'){
   alert('A bit of a trick question. I do have a family, but I\'m not married. I have both my parents and two younger sisters.');
