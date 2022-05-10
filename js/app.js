@@ -1,7 +1,7 @@
 'use strict';
 
 let username = prompt('Welcome! What is your name?');
-alert(`Hello ${username}`);
+alert(`Hello ${username}! Welcome to my About Me page.`);
 
 let answerOne = prompt('Do I have a family?').toLowerCase();
 if(answerOne === 'yes' || answerOne === 'y'){
@@ -37,3 +37,5 @@ if(answerFive === 'yes' || answerFive === 'y'){
 }else if(answerFive === 'no' || answerFive === 'n'){
   alert('That\'s right. I quit my job to do Code Fellows and become a software developer.');
 }
+
+alert(`Thanks for playing ${username}! I hope you had fun and learned a bit about me.`);
