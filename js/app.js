@@ -1,7 +1,7 @@
 'use strict';
 
 let username = prompt('Welcome! What is your name?');
-console.log(`username = ${username}`);
+//console.log(`username = ${username}`);
 alert(`Hello ${username}! Welcome to my About Me page.`);
 alert('We are going to play a guessing game. Please answer \'yes\' or \'no\'.(y/n)');
 
