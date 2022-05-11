@@ -1,0 +1,45 @@
+body{
+  background-color:gray;
+}
+
+header{
+  margin:10px;
+  padding:5px 10px 5px 10px;
+  text-align:center;
+  background-color:black;
+}
+
+h1{
+  font-size:xx-large;
+  color:darkorange;
+}
+
+article{
+  color:darkmagenta;
+  margin:10px;
+  padding-top:20px;
+}
+
+h3{
+  font-size:x-large;
+  margin:5px;
+}
+
+p{
+  font-size:large;
+  margin:5px;
+}
+
+main{
+  padding-bottom:435px;
+}
+
+footer{
+  background-color:black;
+  color:darkorange;
+  margin:10px;
+  padding:5px 10px 5px 10px;
+  /* bottom: 0px;
+  position: fixed;
+  width: 97.75%; */
+}
