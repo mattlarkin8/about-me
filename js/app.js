@@ -65,5 +65,17 @@ for(let i = 4; i > 0; i--){
   }
 }
 
+let foods = ['pizza','burritos','sushi'];
+let answerSeven = prompt('What are some of my favorite things to eat?').toLowerCase();
+for(let a = 6; a > 0; a--){
+  if(answerSeven === foods[0] || answerSeven === foods[1] || answerSeven === foods[2]){
+    alert(`Yes, I do like ${answerSeven}.`);
+    score++;
+    break;
+  }else{
+    answerSeven = prompt('Nope! Guess again.').toLowerCase();
+  }
+}
+alert(`These are all correct answers: ${foods}.`);
 
 alert(`Thanks for playing ${username}! Your final score was ${score}.`);
