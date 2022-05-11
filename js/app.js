@@ -1,17 +1,19 @@
 'use strict';
 
+let score = 0;
+
 let username = prompt('Welcome! What is your name?');
 //console.log(`username = ${username}`);
 alert(`Hello ${username}! Welcome to my About Me page.`);
-alert('We are going to play a guessing game. Please answer \'yes\' or \'no\'.(y/n)');
+alert('We are going to play a guessing game. Please answer \'yes\' or \'no\'. (y/n)');
 
 let answerOne = prompt('Do I have a family?').toLowerCase();
 if(answerOne === 'yes' || answerOne === 'y'){
-  //console.log('A bit of a trick question. I do have a family, but I\'m not married. I have both my parents and two younger sisters.');
-  alert('A bit of a trick question. I do have a family, but I\'m not married. I have both my parents and two younger sisters.');
+  //console.log('Yes, I do. I have both my parents and two younger sisters.');
+  alert('Yes, I do. I have both my parents and two younger sisters.');
 }else if(answerOne === 'no' || answerOne === 'n'){
-  //console.log('Yes and no. I have both my parents and two younger sisters. I am not married though.');
-  alert('Yes and no. I have both my parents and two younger sisters. I am not married though.');
+  //console.log('Sorry, I do. I have both my parents and two younger sisters.');
+  alert('Sorry, I do. I have both my parents and two younger sisters.');
 }
 
 let answerTwo = prompt('Do I have a pet?').toLowerCase();
@@ -49,5 +51,19 @@ if(answerFive === 'yes' || answerFive === 'y'){
   //console.log('That\'s right. I quit my job to do Code Fellows and become a software developer.');
   alert('That\'s right. I quit my job to do Code Fellows and become a software developer.');
 }
+for(let i = 4; i > 0; i--){
+  let answerSix = parseInt(prompt('What is my favorite number? (Hint: it\'s a single digit.)'));
+  if(answerSix === 8){
+    alert('You got it!');
+    score++;
+  }else if(answerSix < 8){
+    alert('That\'s too low.');
+  }else if(answerSix > 8){
+    alert('That\'s too high.');
+  }else{
+    alert('Sorry, you\'ve used all your guesses.');
+  }
+}
 
-alert(`Thanks for playing ${username}! I hope you had fun and learned a bit about me.`);
+
+alert(`Thanks for playing ${username}! Your final score was ${score}.`);
