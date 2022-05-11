@@ -58,6 +58,7 @@ if(answerFive === 'yes' || answerFive === 'y'){
 }
 for(let i = 4; i > 0; i--){
   let answerSix = parseInt(prompt('What is my favorite number? (Hint: it\'s a single digit.)'));
+  //console.log(`answerSix = ${answerSix}`);
   if(answerSix === 8){
     alert('You got it!');
     score++;
@@ -73,6 +74,7 @@ for(let i = 4; i > 0; i--){
 let foods = ['pizza','burritos','sushi'];
 let answerSeven = prompt('What are some of my favorite things to eat?').toLowerCase();
 for(let a = 6; a > 0; a--){
+  //console.log(`answerSeven = ${answerSeven}`);
   if(answerSeven === foods[0] || answerSeven === foods[1] || answerSeven === foods[2]){
     alert(`Yes, I do like ${answerSeven}.`);
     score++;
