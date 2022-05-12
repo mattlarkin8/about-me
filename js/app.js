@@ -62,14 +62,16 @@ for(let i = 4; i > 0; i--){
   if(answerSix === 8){
     alert('You got it!');
     score++;
+    break;
   }else if(answerSix < 8){
     alert('That\'s too low.');
   }else if(answerSix > 8){
     alert('That\'s too high.');
-  }else{
-    alert('Sorry, you\'ve used all your guesses.');
+  }else if(i === 0){
+    alert('Sorry, you\'ve used all your guesses. The correct answer was 8.');
   }
 }
+
 
 let foods = ['pizza','burritos','sushi'];
 let answerSeven = prompt('What are some of my favorite things to eat?').toLowerCase();
